@@ -1,6 +1,5 @@
-<h1>{{title}}</h1>
 <div class="container">
-  <form formGroup="searchForm">
+  <form [formGroup]="searchForm">
     <mat-form-field>
       <input formControlName="search" id="search" matInput placeholder="Search YouTube">
     </mat-form-field>

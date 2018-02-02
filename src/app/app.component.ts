@@ -21,6 +21,7 @@ export class AppComponent {
   searchForm: FormGroup;
   results: Observable<{}>;
   title = 'NG Youtube';
+  //isDataLoaded = false;
 
   constructor(private formBuilder: FormBuilder, private http: Http) {
     this.searchForm = this.formBuilder.group({

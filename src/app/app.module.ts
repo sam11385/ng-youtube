@@ -4,7 +4,6 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
-import { ServiceWorkerModule } from '@angular/service-worker';
 import {
   MatButtonModule,
   MatFormFieldModule,
@@ -26,7 +25,6 @@ import {
     MatCardModule,
     MatInputModule,
     MatProgressSpinnerModule,
-    ServiceWorkerModule.register(''),
   ],
   providers: [],
   bootstrap: [AppComponent],

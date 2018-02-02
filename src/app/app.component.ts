@@ -20,6 +20,7 @@ const API_KEY = 'AIzaSyCRJqo_zdv1gDIsSkczJOFTnKcm2coSWEA';
 export class AppComponent {
   searchForm: FormGroup;
   results: Observable<{}>;
+  title = 'NG Youtube';
 
   constructor(private formBuilder: FormBuilder, private http: Http) {
     this.searchForm = this.formBuilder.group({

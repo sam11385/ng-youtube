@@ -31,9 +31,9 @@ export class AppComponent {
       .filter(value => value.length > 2)
       .debounceTime(500)
       .distinctUntilChanged()
-      .switchMap(query =>
+      .switchMap(searchTerm =>
         this.http.get(
-          `${API_URL}?q=${query}&key=${API_KEY}&maxResults=20&part=snippet&type=video`
+          `${API_URL}?q=${searchTerm}&key=${API_KEY}&maxResults=20&part=snippet&type=video`
         )
       )
       .map(res => res.json().items);

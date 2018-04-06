@@ -12,6 +12,8 @@ import {
   MatProgressSpinnerModule,
 } from '@angular/material';
 
+// import { ButtonModule } from 'sam-component-lib';
+
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -25,6 +27,7 @@ import {
     MatCardModule,
     MatInputModule,
     MatProgressSpinnerModule,
+    ButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

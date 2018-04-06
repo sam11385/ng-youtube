@@ -27,7 +27,6 @@ import {
     MatCardModule,
     MatInputModule,
     MatProgressSpinnerModule,
-    ButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

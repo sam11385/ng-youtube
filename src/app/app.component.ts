@@ -30,7 +30,10 @@ export class AppComponent {
     this.results = this.searchForm.controls.search.valueChanges
       .filter(value => value.length > 2)
       .debounceTime(500)
+      //use distictUntilChanged: Only emit when the current value is different than the last.
       .distinctUntilChanged()
+      //use Switchmap: it works perfect for scenarios like typeaheads
+      //where you are no longer concerned with the response of the previous request when a new input arrives.
       .switchMap(searchTerm =>
         this.http.get(
           `${API_URL}?q=${searchTerm}&key=${API_KEY}&maxResults=20&part=snippet&type=video`

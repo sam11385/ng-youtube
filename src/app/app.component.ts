@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 
 
 const API_URL = 'https://www.googleapis.com/youtube/v3/search';
-const API_KEY = 'AIzaSyCRJqo_zdv1gDIsSkczJOFTnKcm2coSWEA';
+const API_KEY = '';
 
 @Component({
   selector: 'app-root',
